@@ -197,18 +197,29 @@
   <!-- Image Gallery -->
 <div class="row mt-5" id="gallery">
   <div class="col-6 col-md-4 col-lg-3 mb-4">
-    <img src="eventspic1.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="0" alt="Event 1">
+    <img src="eventspic1.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="eventspic1.jpg" alt="Event 1">
   </div>
   <div class="col-6 col-md-4 col-lg-3 mb-4">
-    <img src="eventspic2.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="1" alt="Event 2">
+    <img src="eventspic2.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="eventspic2.jpg" alt="Event 2">
   </div>
   <div class="col-6 col-md-4 col-lg-3 mb-4">
-    <img src="eventspic3.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="2" alt="Event 3">
+    <img src="eventspic3.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="eventspic3.jpg" alt="Event 3">
   </div>
   <div class="col-6 col-md-4 col-lg-3 mb-4">
-    <img src="eventspic4.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="2" alt="Event 4">
+    <img src="eventspic4.jpg" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="eventspic4.jpg" alt="Event 4">
   </div>
 </div>
+<!-- Modal Template -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body text-center p-0">
+        <img src="" id="modalImage" class="img-fluid" alt="Full Size Image">
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </section>
 
@@ -308,6 +319,15 @@
 </footer>
 
 
+<script>
+  const imageModal = document.getElementById('imageModal');
+  imageModal.addEventListener('show.bs.modal', function (event) {
+    const triggerImage = event.relatedTarget;
+    const imageSrc = triggerImage.getAttribute('data-bs-image');
+    const modalImage = imageModal.querySelector('#modalImage');
+    modalImage.src = imageSrc;
+  });
+</script>
 
 
 
