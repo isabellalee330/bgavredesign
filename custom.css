@@ -1,1 +1,138 @@
 /* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+#mainNav {
+    background-color: #336a83 !important;
+}
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #9999;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: #9999;
+    font-weight: bold;
+}
+
+
+#mainCarousel {
+    height: 100vh;
+    position: relative;
+}
+
+#mainCarousel {
+    height: 100vh;
+    padding-top: 70px; 
+    position: relative;
+    overflow: hidden;
+}
+
+#mainCarousel .carousel-inner,
+#mainCarousel .carousel-item,
+#mainCarousel img {
+    height: calc(100vh - 70px); 
+    width: 100%;
+    object-fit: cover;
+}
+
+h1, h2, h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+h2, h5 {
+    color: #336a83;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.custom-participate-btn {
+    background-color: #f7f0ac;
+    color: #000;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-participate-btn:hover {
+    background-color: #f7f0ac; 
+    color: #000;
+}
+.custom-participate-btn {
+  background-color: #f7f0ac;
+  color: #000;
+  border: none;
+}
+
+.custom-participate-btn:hover {
+  background-color: #d6c94f; 
+  color: #000;
+}
+
+.btn-yellow {
+  background-color: #e9dd77;
+  color: #000;
+  border: none;
+}
+.btn-yellow:hover {
+  background-color: #d6c94f;
+  color: #000;
+}
+
+
+#mainCarousel .carousel-caption {
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 2rem;
+}
+
+
+.custom-contact-btn {
+    background-color: #336a83;
+    color: white;
+    border: none;
+}
+
+.custom-contact-btn:hover {
+    background-color: #285465; 
+}
+.custom-footer {
+    background-color: #336a83;
+    color: white;
+}
+.btn-custom {
+  background-color: #f7f0ac;
+  color: #333; 
+  border: 1px solid #e0da92;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e0da92;
+  color: #000;
+}
+.two-column-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: disc;
+  padding-left: 20px;
+}
